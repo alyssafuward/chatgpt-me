@@ -15,7 +15,7 @@ This tool reads your ChatGPT export, strips out all the AI responses, and produc
 3. Export your ChatGPT data: **ChatGPT → Settings → Data Controls → Export Data**
 4. Drop your export (ZIP or JSON files) into the tool
 5. Set a size limit if you want (default is 10 MB)
-6. Download the two output files: your extracted data and the analysis prompt
+6. Edit the analysis prompt if you want to customize what Claude looks for, then download both output files: your extracted data and the prompt
 7. Open Claude, attach both files, and paste the cover message the tool provides
 
 Claude will analyze your history and return a working profile plus a system prompt tailored to you.
