@@ -42,7 +42,6 @@
     }
 
     .subtitle { color: var(--muted); margin-bottom: 12px; font-size: 0.95rem; }
-    .subtitle:last-of-type { margin-bottom: 36px; }
 
     .steps {
       display: flex;
@@ -189,7 +188,8 @@
       padding: 14px 18px;
       font-size: 0.84rem;
       color: #4a7a44;
-      margin-top: 20px;
+      margin-top: 12px;
+      margin-bottom: 28px;
       display: flex;
       gap: 10px;
     }
@@ -397,6 +397,11 @@
     <p class="subtitle">Moving from ChatGPT to Claude? Common approaches include exporting your memory or asking ChatGPT to summarize you.<br><br>This app takes a different approach: extract your raw conversation history and let Claude build your profile from the source.</p>
     <p class="subtitle">Once generated, review and edit it, combine it with any other profile exercises you've done, then paste it wherever you'd like Claude to use it — a system prompt, custom instructions, or memory.</p>
 
+    <div class="notice">
+      <span class="notice-icon">🔒</span>
+      <span>All processing happens locally in your browser. Your conversations are never sent to any server.</span>
+    </div>
+
     <div class="steps">
       <div class="step active" id="step-1"><span class="step-num">1</span> Upload export</div>
       <div class="step" id="step-2"><span class="step-num">2</span> Processing</div>
@@ -414,11 +419,6 @@
 
     <div class="file-list hidden" id="file-list"></div>
     <button class="btn hidden" id="analyze-btn">Analyze my conversations</button>
-
-    <div class="notice">
-      <span class="notice-icon">🔒</span>
-      <span>All processing happens locally in your browser. Your conversations are never sent to any server.</span>
-    </div>
 
     <div class="cap-control">
       <span class="cap-label">Output size limit</span>
