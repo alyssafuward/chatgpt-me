@@ -385,6 +385,21 @@
 
     .file-list-item-icon { color: var(--muted); flex-shrink: 0; }
 
+    .attribution {
+      margin-top: 48px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .attribution a {
+      color: var(--muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .attribution a:hover { color: var(--text); }
+
     scrollbar-width { thin; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
@@ -474,6 +489,8 @@
         <button class="btn btn-outline" onclick="copyCover(this)">Copy message</button>
       </div>
     </div>
+
+    <footer class="attribution">Made by <a href="https://substack.com/@alyssafuward" target="_blank" rel="noopener">Alyssa Fu Ward</a></footer>
   </div>
 
   <div class="toast" id="toast"></div>
